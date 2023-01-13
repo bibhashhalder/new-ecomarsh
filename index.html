@@ -14,10 +14,20 @@
           theme: {
             extend: {
               colors: {
-                
+                darkRed: '#8b0000',
+                honeyDew: '#f0fff0',
+                olive: '#808000',
+                navy: '#000080',
+                greenYellow: '#adff2f',
+                green: '#008000',
+                lightGreen: '#90ee90',
+                lightGray: '#d3d3d3'
               },
               fontFamily:{
                 popins:['Poppins', 'sans-serif']
+              },
+              backgroundImage:{
+                heroPattern: "url('img/shirt.jpg')"
               }
             }
           }
@@ -26,11 +36,12 @@
     <title>new tailor</title>
 </head>
 <body class="text-popins">
-  <header>
-    <nav class="flex justify-between lg:mx-20 mx-12 mt-5">
+  <!--==============================header start================================ -->
+  <header class="bg-lightGray mt-0 pt-3 h-12 w-screen ">
+    <nav class="  flex justify-between lg:mx-20 mx-12 ">
       <div class="w-11/12 flex justify-between">
-        <a href="index.html" class="text-clifford">
-          <i class="bx bxs-shopping-bags nav_logo.icon"></i>e-shopper
+        <a href="index.html" class="-mt-6">
+          <i class="bx bxs-shopping-bags nav_logo.icon"></i><span class="text-lightGreen text-5xl italic font-bold">e</span><span class="text-green text-3xl font-semibold">-shopper</span>
         </a>
         <div class="nav-menu">
           <ul class="lg:flex ">
@@ -56,8 +67,12 @@
       </div>
     </nav>
   </header>
+  <!-- ===============================header end============================= -->
+  <!-- ===============================nain start============================= -->
   <main>
+   <section class="bg-heroPattern bg-cover h-screen w-auto bg-no-repeat">
     
+   </section>
   </main>
 </body>
 </html>
