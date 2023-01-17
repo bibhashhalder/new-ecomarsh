@@ -17,6 +17,7 @@
                 darkRed: '#8b0000',
                 honeyDew: '#f0fff0',
                 olive: '#808000',
+                lightGray: '#d3d3d3',
                 navy: '#000080',
                 greenYellow: '#adff2f',
                 green: '#008000',
@@ -24,27 +25,31 @@
                 lightGray: '#d3d3d3'
               },
               fontFamily:{
-                popins:['Poppins', 'sans-serif']
+                popins:['Poppins', 'sans-serif'],
+                anton:['Anton', 'sans-serif'],
+                dancing:['Dancing Script', 'cursive']
               },
               backgroundImage:{
-                heroPattern: "url('img/shirt.jpg')"
+                heroPattern: "url('img/agriculture.jpg')",
+                banner2:"url('img/banner2.jpg')"
               }
             }
           }
         }
       </script>
+      <link rel="stylesheet" href="css/style.css">
     <title>new tailor</title>
 </head>
 <body class="text-popins">
   <!--==============================header start================================ -->
-  <header class="bg-lightGray mt-0 pt-3 h-12 w-screen ">
-    <nav class="  flex justify-between lg:mx-20 mx-12 ">
+  <header class="bg-lightGray mt-0 pt-3 h-12 sticky top-0 w-full bg-contain">
+    <nav class="  flex justify-between lg:mx-20 mx-auto  ">
       <div class="w-11/12 flex justify-between">
-        <a href="index.html" class="-mt-6">
-          <i class="bx bxs-shopping-bags nav_logo.icon"></i><span class="text-lightGreen text-5xl italic font-bold">e</span><span class="text-green text-3xl font-semibold">-shopper</span>
+        <a href="index.html" class="-mt-6 w-full">
+          <i class="bx bxs-shopping-bags nav_logo.icon"></i><span class="text-lightGreen text-5xl italic font-bold">A</span><span class="text-green text-3xl font-semibold">gricultural insecticide</span>
         </a>
         <div class="nav-menu">
-          <ul class="lg:flex ">
+          <ul class="flex ">
             <li class="mx-3"><a href="index.html">Home</a></li>
             <li class="mx-3"><a href="shop.html">Shop</a></li>
             <li class="mx-3"><a href="cart.html">Carts</a></li>
@@ -70,9 +75,37 @@
   <!-- ===============================header end============================= -->
   <!-- ===============================nain start============================= -->
   <main>
-   <section class="bg-heroPattern bg-cover h-screen w-auto bg-no-repeat">
-    
+   <section class="bg-heroPattern mb-5 bg-contain bg-no-repeat h-screen w-full lg:bg-cover">
+   <div class="items-end mx-20 w-3/4  py-32">
+    <h1 class="text-white text-5xl ">Better Life  <span class="text-olive text-6xl">Farmming</span></h1>
+    <p class="font-dancing py-6 text-2xl">A dedicated agricultural products company meeting the needs of farmers</p>
+   </div>
    </section>
+   <section class="bg-banner2 mx-auto bg-contain bg-no-repeat rounded h-screen w-11/12 lg:bg-cover">
+    <div class="items-end mx-auto w-3/4 flex justify-between py-32">
+      <div class="">
+        <h1 class="text-white text-5xl ">Dealer</h1>
+     <p class="font-dancing py-6 text-2xl">Abdulla al Galib</p>
+      </div>
+      
+        <img class="-mb-[43.20%] " src="img/delar3.png" alt="">
+      
+     </div>
+    </section>
+    <section class=" flex justify-between mt-3 p-6  mx-14">
+      <form class="w-3/5 border bg-red-200 p-2 h-1/2 rounded-lg">
+        <input class="w-full rounded-md bg-white  my-3 py-2 px-3" type="email" placeholder="input your email">
+        <input class="w-full rounded-md bg-white  my-3 py-2 px-3" type="password" placeholder="input your password">
+        <input class="w-1/4 mx-auto py-2 my-3 bg-lightGray" type="submit">
+      </form>
+      <div class="w-3/5 mx-4 mt-0">
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14735.620916756448!2d89.31320505000001!3d22.5826476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1673936906628!5m2!1sen!2sbd" width="750" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
   </main>
+  <!-- ===============================nain end============================= -->
+  <footer class="bg-slate-600 h-16">
+
+  </footer>
 </body>
 </html>
